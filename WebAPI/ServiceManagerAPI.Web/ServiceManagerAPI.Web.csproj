@@ -89,8 +89,10 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="index.html" />
+    <Content Include="orders.html" />
     <Content Include="Scripts\common.js" />
     <Content Include="Scripts\order.js" />
+    <Content Include="Scripts\service.js" />
     <Content Include="Views\Orders\main.html" />
     <Content Include="Web.config" />
   </ItemGroup>

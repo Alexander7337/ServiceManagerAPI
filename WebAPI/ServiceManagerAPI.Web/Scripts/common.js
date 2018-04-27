@@ -1,5 +1,12 @@
-﻿$(function () {
-    var uri = 'api/services';
+﻿var uri = "";
+
+//$(document).ready(function () {
+//    uri = loadUri('services');
+//    loadServices(uri)
+//});
+
+function loadServices(input) {
+    //var uri = loadUri(input);
 
     $(document).ready(function () {
         $.getJSON(uri)
@@ -15,7 +22,7 @@
 
     $("#serviceForm").submit(function () {
         $.ajax({
-            url: 'api/services',
+            url: uri,
             type: 'POST',
             data: data,
             contentType: "application/json; charset=utf-8",
@@ -31,7 +38,11 @@
         });
         return false;
     });
-});
+};
+
+function loadUri(uri) {
+    return 'api/' + uri;
+}
 
 function updateItem() {
     var id = $('#serviceId').val();
@@ -42,8 +53,9 @@ function updateItem() {
     service.Description = description;
     var json = JSON.stringify(service);
 
+    //var uri = loadUri('services')
     $.ajax({
-        url: 'api/services/' + id,
+        url: uri + '/' + id,
         type: 'PUT',
         dataType: 'json',
         data: { serviceName: serviceName, description: description },
@@ -60,7 +72,7 @@ function updateItem() {
 }
 
 function findServiceByID() {
-    var uri = 'api/services';
+    //var uri = loadUri('services');
     var id = $('#serviceId').val();
     $.getJSON(uri + '/' + id)
         .done(function (data) {
@@ -75,9 +87,10 @@ function findServiceByID() {
 
 function deleteItemByID(serviceId) {
     var id = serviceId;
+    //var uri = loadUri('services');
 
     $.ajax({
-        url: 'api/services/' + id,
+        url: uri + '/' + id,
         type: 'DELETE',
         dataType: 'json',
         data: id,
@@ -97,5 +110,8 @@ function getItemID(item) {
 }
 
 function formatItem(item) {
-    return item.ServiceName + ': ' + item.Description;
+    if (item.ServiceName !== undefined) {
+        return item.ServiceName + ': ' + item.Description;
+    }
+    return item.OrderName + ': ' + item.Description;
 }
