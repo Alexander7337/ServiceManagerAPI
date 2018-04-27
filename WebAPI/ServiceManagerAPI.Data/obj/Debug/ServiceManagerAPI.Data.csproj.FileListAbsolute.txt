@@ -1,0 +1,16 @@
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Data\bin\Debug\ServiceManagerAPI.Data.dll.config
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Data\bin\Debug\ServiceManagerAPI.Data.dll
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Data\bin\Debug\ServiceManagerAPI.Data.pdb
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Data\bin\Debug\EntityFramework.dll
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Data\bin\Debug\ServiceManagerAPI.Entities.dll
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Data\bin\Debug\ServiceManagerAPI.Entities.pdb
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Data\bin\Debug\EntityFramework.xml
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Data\obj\Debug\ServiceManagerAPI.Data.csprojResolveAssemblyReference.cache
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Data\obj\Debug\ServiceManagerAPI.Data.Migrations.ServiceManagerDB.resources
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Data\obj\Debug\ServiceManagerAPI.Data.csproj.GenerateResource.cache
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Data\obj\Debug\ServiceManagerAPI.Data.csproj.CoreCompileInputs.cache
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Data\obj\Debug\ServiceManagerAPI.Data.csproj.CopyComplete
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Data\obj\Debug\ServiceManagerAPI.Data.dll
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Data\obj\Debug\ServiceManagerAPI.Data.pdb

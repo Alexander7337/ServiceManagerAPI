@@ -1,0 +1,6 @@
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Entities\bin\Debug\ServiceManagerAPI.Entities.dll
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Entities\bin\Debug\ServiceManagerAPI.Entities.pdb
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Entities\obj\Debug\ServiceManagerAPI.Entities.csprojResolveAssemblyReference.cache
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Entities\obj\Debug\ServiceManagerAPI.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Entities\obj\Debug\ServiceManagerAPI.Entities.dll
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Entities\obj\Debug\ServiceManagerAPI.Entities.pdb
