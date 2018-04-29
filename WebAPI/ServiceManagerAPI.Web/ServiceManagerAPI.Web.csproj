@@ -93,11 +93,11 @@
     <Content Include="Scripts\common.js" />
     <Content Include="Scripts\order.js" />
     <Content Include="Scripts\service.js" />
-    <Content Include="Views\Orders\main.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\ClientsController.cs" />
     <Compile Include="Controllers\OrdersController.cs" />
     <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Global.asax.cs">
