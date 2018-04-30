@@ -1,13 +1,15 @@
 ﻿namespace ServiceManagerAPI.Web.Controllers
 {
     using ServiceManagerAPI.Data;
+    using ServiceManagerAPI.Entities.Contracts;
     using ServiceManagerAPI.Entities.Models;
+    using ServiceManagerAPI.Web.Managers;
     using System.Collections.Generic;
     using System.Linq;
     using System.Net;
     using System.Web.Http;
 
-    public class ClientsController : ApiController
+    public class CustomersController : ApiController
     {
         private ApiContext _context = new ApiContext();
 
@@ -84,10 +86,11 @@
 
         [HttpGet]
         // GET: api/customers/5/GetCustomerOrders
-        public IHttpActionResult GetCustomerOrders(int id)
+        public IEnumerable<IEntity> GetCustomerOrders(int id)
         {
-            // TO DO: implement logic here
-            return Ok();
+            Repository<Order> serviceManager = new Repository<Order>();
+            var services = serviceManager.Get();
+            return services;
         }
     }
 }

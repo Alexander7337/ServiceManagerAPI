@@ -1,6 +1,8 @@
 ﻿namespace ServiceManagerAPI.Entities.Models
 {
-    public class Order
+    using ServiceManagerAPI.Entities.Contracts;
+
+    public class Order : IEntity
     {
         public int Id { get; set; }
 

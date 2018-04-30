@@ -1,8 +1,9 @@
 ﻿namespace ServiceManagerAPI.Entities.Models
 {
+    using ServiceManagerAPI.Entities.Contracts;
     using System.Collections.Generic;
 
-    public class Customer
+    public class Customer : IEntity
     {
         public Customer()
         {
