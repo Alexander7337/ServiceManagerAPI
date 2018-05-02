@@ -1,6 +1,15 @@
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Entities\bin\Debug\ServiceManagerAPI.Entities.dll.config
 C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Entities\bin\Debug\ServiceManagerAPI.Entities.dll
 C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Entities\bin\Debug\ServiceManagerAPI.Entities.pdb
-C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Entities\obj\Debug\ServiceManagerAPI.Entities.csprojResolveAssemblyReference.cache
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Entities\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Entities\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Entities\bin\Debug\System.Web.Http.dll
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Entities\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Entities\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Entities\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Entities\bin\Debug\System.Web.Http.xml
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Entities\bin\Debug\System.Web.Http.WebHost.xml
 C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Entities\obj\Debug\ServiceManagerAPI.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Entities\obj\Debug\ServiceManagerAPI.Entities.csproj.CopyComplete
 C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Entities\obj\Debug\ServiceManagerAPI.Entities.dll
 C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Entities\obj\Debug\ServiceManagerAPI.Entities.pdb

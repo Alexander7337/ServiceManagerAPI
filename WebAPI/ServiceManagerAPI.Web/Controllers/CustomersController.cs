@@ -85,7 +85,7 @@
         }
 
         [HttpGet]
-        // GET: api/customers/5/GetCustomerOrders
+        // GET: api/GetCustomerOrders
         public IEnumerable<IEntity> GetCustomerOrders(int id)
         {
             Repository<Order> serviceManager = new Repository<Order>();

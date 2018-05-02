@@ -61,6 +61,7 @@ C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerA
 C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Web\bin\ServiceManagerAPI.Data.pdb
 C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Web\bin\ServiceManagerAPI.Data.dll.config
 C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Web\bin\ServiceManagerAPI.Entities.pdb
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Web\bin\ServiceManagerAPI.Entities.dll.config
 C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Web\bin\EntityFramework.xml
 C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Web\bin\EntityFramework.SqlServer.xml
 C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
