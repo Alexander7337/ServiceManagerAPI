@@ -41,9 +41,7 @@
             this._context.SaveChanges();
             return Ok(entity);
         }
-
-        //IEnumerable<Service> services = this._context.Services.ToList();
-        //    return services;
+        
         public IEnumerable<IEntity> Get()
         {
             IEnumerable<IEntity> entities = new List<IEntity>();
@@ -72,9 +70,31 @@
             throw new NotImplementedException();
         }
 
-        public IHttpActionResult Post(T entity)
+        public IHttpActionResult Post(T type)
         {
-            throw new NotImplementedException();
+            dynamic entity = null;
+            if (typeof(T) == typeof(Customer))
+            {
+                entity = type as Customer;
+                this._context.Customers.Add(entity);
+            }
+            else if (typeof(T) == typeof(Order))
+            {
+                entity = type as Order;
+                this._context.Orders.Add(entity);
+            }
+            else if (typeof(T) == typeof(Employee))
+            {
+                entity = type as Employee;
+                this._context.Employees.Add(entity);
+            }
+            else if (typeof(T) == typeof(Service))
+            {
+                entity = type as Service;
+                this._context.Services.Add(entity);
+            }
+
+            return entity;
         }
 
         public IHttpActionResult Put(int id, T entity)

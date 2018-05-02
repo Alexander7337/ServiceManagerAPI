@@ -14,7 +14,12 @@
             config.Routes.MapHttpRoute(
                 name: "Customers",
                 routeTemplate: "api/{controller}/{customerId}/{action}/{id}",
-                defaults: new { customerId = RouteParameter.Optional, action = RouteParameter.Optional, id = RouteParameter.Optional }
+                defaults: new
+                {
+                    customerId = RouteParameter.Optional,
+                    action = RouteParameter.Optional,
+                    id = RouteParameter.Optional
+                }
             );
 
             config.Routes.MapHttpRoute(

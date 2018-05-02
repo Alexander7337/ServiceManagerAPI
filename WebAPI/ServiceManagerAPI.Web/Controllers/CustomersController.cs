@@ -85,12 +85,21 @@
         }
 
         [HttpGet]
-        // GET: api/GetCustomerOrders
+        // GET: api/customers/5/GetCustomerOrders/1
         public IEnumerable<IEntity> GetCustomerOrders(int id)
         {
             Repository<Order> serviceManager = new Repository<Order>();
             var services = serviceManager.Get();
             return services;
+        }
+
+        [HttpPost]
+        // POST: api/customers/5/CreateCustomerOrder
+        public IHttpActionResult CreateCustomerOrder(Order order)
+        {
+            Repository<Order> serviceManager = new Repository<Order>();
+            var response = serviceManager.Post(order);
+            return Ok(response);
         }
     }
 }
