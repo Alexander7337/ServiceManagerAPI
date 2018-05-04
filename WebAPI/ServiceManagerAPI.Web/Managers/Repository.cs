@@ -42,7 +42,7 @@
             return Ok(entity);
         }
         
-        public IEnumerable<IEntity> Get()
+        public IEnumerable<IEntity> Get(int id)
         {
             IEnumerable<IEntity> entities = new List<IEntity>();
             if (typeof(T) == typeof(Customer))
@@ -51,7 +51,7 @@
             }
             else if (typeof(T) == typeof(Order))
             {
-                entities = this._context.Orders.ToList();
+                entities = this._context.Orders.Where(i => i.Customer.Id == id).ToList();
             }
             else if (typeof(T) == typeof(Employee))
             {
@@ -65,10 +65,10 @@
             return entities;
         }
 
-        public IHttpActionResult Get(int id)
-        {
-            throw new NotImplementedException();
-        }
+        //public IHttpActionResult Get(int id)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         public IHttpActionResult Post(T type)
         {

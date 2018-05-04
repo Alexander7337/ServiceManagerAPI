@@ -11,5 +11,7 @@
         public string Description { get; set; }
 
         public virtual Service Service { get; set; }
+
+        public virtual Customer Customer { get; set; }
     }
 }

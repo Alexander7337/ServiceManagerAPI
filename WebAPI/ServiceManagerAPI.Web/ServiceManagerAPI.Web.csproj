@@ -87,10 +87,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="customers.html" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
     <Content Include="orders.html" />
     <Content Include="Scripts\common.js" />
+    <Content Include="Scripts\customer.js" />
     <Content Include="Scripts\order.js" />
     <Content Include="Scripts\service.js" />
     <Content Include="Web.config" />

@@ -5,9 +5,9 @@
 
     public interface IRepository<T> where T : IEntity
     {
-        IEnumerable<IEntity> Get();
+        IEnumerable<IEntity> Get(int id);
 
-        IHttpActionResult Get(int id);
+        //IHttpActionResult Get(int id);
 
         IHttpActionResult Post(T entity);
 

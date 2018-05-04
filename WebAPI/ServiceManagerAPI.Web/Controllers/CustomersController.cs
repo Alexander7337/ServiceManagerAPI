@@ -7,6 +7,7 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Net;
+    using System.Web;
     using System.Web.Http;
 
     public class CustomersController : ApiController
@@ -85,11 +86,14 @@
         }
 
         [HttpGet]
-        // GET: api/customers/5/GetCustomerOrders/1
+        // GET: api/customers/5/GetCustomerOrders
         public IEnumerable<IEntity> GetCustomerOrders(int id)
         {
+            int customerId = 0;
+            var fragment = Url.Request.RequestUri.Segments[3].Remove(1);
+            bool isParsed = int.TryParse(fragment, out customerId);
             Repository<Order> serviceManager = new Repository<Order>();
-            var services = serviceManager.Get();
+            var services = serviceManager.Get(customerId);
             return services;
         }
 
