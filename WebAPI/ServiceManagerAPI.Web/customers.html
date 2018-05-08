@@ -7,42 +7,42 @@
     <script src="Scripts/customer.js"></script>
     <script src="Scripts/common.js"></script>
     <script>
-        function getServicesFromDB() {
-            var customerId = $('#customerId').val();
+        //function getServicesFromDB() {
+        //    var customerId = $('#customerId').val();
 
-            $.ajax({
-                type: 'GET',
-                url: uri + '/' + customerId + '/GetCustomerOrders',
-                contentType: 'application/json',
-                dataType: 'json',
-                success: function (data) {
-                    $();
-                    var json = $.parseJSON(JSON.stringify(data));
-                    var html = '';
-                    for (var i = 0; i < json.length; i++) {
-                        html += '<tr class="orderRow">';
-                        $.each(json[i], function (key, value) {
-                            var name = '';
-                            var description = '';
-                            if (key === 'OrderName' || key === 'CustomerName') {
-                                name = value;
-                            } else if (key === 'Description') {
-                                description = value;
-                            }
-                            html += '<td>' + name + '</td>'
-                            html += '<td>' + description + '</td>'
-                        });
-                        html += '</tr>';
-                    }
-                    $('#tableOrders').append(html);
-                    $('#tableOrders').removeAttr('hidden')
-                },
-                error: function (ex) {
-                    var r = $.parseJSON(response.responseText);
-                    alert("Message: " + r.Message);
-                }
-            });
-        }
+        //    $.ajax({
+        //        type: 'GET',
+        //        url: uri + '/' + customerId + '/GetCustomerOrders',
+        //        contentType: 'application/json',
+        //        dataType: 'json',
+        //        success: function (data) {
+        //            $();
+        //            var json = $.parseJSON(JSON.stringify(data));
+        //            var html = '';
+        //            for (var i = 0; i < json.length; i++) {
+        //                html += '<tr class="orderRow">';
+        //                $.each(json[i], function (key, value) {
+        //                    var name = '';
+        //                    var description = '';
+        //                    if (key === 'OrderName' || key === 'CustomerName') {
+        //                        name = value;
+        //                    } else if (key === 'Description') {
+        //                        description = value;
+        //                    }
+        //                    html += '<td>' + name + '</td>'
+        //                    html += '<td>' + description + '</td>'
+        //                });
+        //                html += '</tr>';
+        //            }
+        //            $('#tableOrders').append(html);
+        //            $('#tableOrders').removeAttr('hidden')
+        //        },
+        //        error: function (ex) {
+        //            var r = $.parseJSON(response.responseText);
+        //            alert("Message: " + r.Message);
+        //        }
+        //    });
+        //}
     </script>
 </head>
 
@@ -54,6 +54,44 @@
     </header>
 
     <main>
+        <script>
+            //function getServicesFromDB() {
+            //    var customerId = $('#customerId').val();
+
+            //    $.ajax({
+            //        type: 'GET',
+            //        url: uri + '/' + customerId + '/GetCustomerOrders',
+            //        contentType: 'application/json',
+            //        dataType: 'json',
+            //        success: function (data) {
+            //            $();
+            //            var json = $.parseJSON(JSON.stringify(data));
+            //            var html = '';
+            //            for (var i = 0; i < json.length; i++) {
+            //                html += '<tr class="orderRow">';
+            //                $.each(json[i], function (key, value) {
+            //                    var name = '';
+            //                    var description = '';
+            //                    if (key === 'OrderName' || key === 'CustomerName') {
+            //                        name = value;
+            //                    } else if (key === 'Description') {
+            //                        description = value;
+            //                    }
+            //                    html += '<td>' + name + '</td>'
+            //                    html += '<td>' + description + '</td>'
+            //                });
+            //                html += '</tr>';
+            //            }
+            //            $('#tableOrders').append(html);
+            //            $('#tableOrders').removeAttr('hidden')
+            //        },
+            //        error: function (ex) {
+            //            var r = $.parseJSON(response.responseText);
+            //            alert("Message: " + r.Message);
+            //        }
+            //    });
+            //}
+        </script>
         <div>
             <h2>All Services</h2>
             <ul id="services" />
@@ -112,7 +150,7 @@
                     </th>
                 </tr>
             </table>
-            <input type="button" value="Search" onclick="getServicesFromDB();" />
+            <input type="button" value="Search" onclick="getDataFromDB();" />
         </div>
     </main>
 
