@@ -13,4 +13,3 @@ C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerA
 C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Entities\obj\Debug\ServiceManagerAPI.Entities.csproj.CopyComplete
 C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Entities\obj\Debug\ServiceManagerAPI.Entities.dll
 C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Entities\obj\Debug\ServiceManagerAPI.Entities.pdb
-C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Entities\obj\Debug\ServiceManagerAPI.Entities.csprojResolveAssemblyReference.cache

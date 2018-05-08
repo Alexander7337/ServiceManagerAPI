@@ -22,7 +22,8 @@
         }
 
         // GET api/customers/5
-        public IHttpActionResult Get(int id)
+        [ActionName("GetCustomer")]
+        public IHttpActionResult GetCustomer(int id)
         {
             Customer customer = new Customer();
             customer = this._context.Customers.FirstOrDefault(c => c.Id == id);
@@ -87,7 +88,7 @@
 
         [HttpGet]
         // GET: api/customers/5/GetCustomerOrders
-        public IEnumerable<IEntity> GetCustomerOrders(int id)
+        public IEnumerable<IEntity> GetCustomerOrders()
         {
             int customerId = 0;
             var fragment = Url.Request.RequestUri.Segments[3].Remove(1);

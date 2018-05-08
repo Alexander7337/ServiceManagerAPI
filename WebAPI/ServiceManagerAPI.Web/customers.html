@@ -2,16 +2,54 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Service Manager API - Customers</title>
+    <title>Service Manager API</title>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
     <script src="Scripts/customer.js"></script>
     <script src="Scripts/common.js"></script>
+    <script>
+        function getServicesFromDB() {
+            var customerId = $('#customerId').val();
+
+            $.ajax({
+                type: 'GET',
+                url: uri + '/' + customerId + '/GetCustomerOrders',
+                contentType: 'application/json',
+                dataType: 'json',
+                success: function (data) {
+                    $();
+                    var json = $.parseJSON(JSON.stringify(data));
+                    var html = '';
+                    for (var i = 0; i < json.length; i++) {
+                        html += '<tr class="orderRow">';
+                        $.each(json[i], function (key, value) {
+                            var name = '';
+                            var description = '';
+                            if (key === 'OrderName' || key === 'CustomerName') {
+                                name = value;
+                            } else if (key === 'Description') {
+                                description = value;
+                            }
+                            html += '<td>' + name + '</td>'
+                            html += '<td>' + description + '</td>'
+                        });
+                        html += '</tr>';
+                    }
+                    $('#tableOrders').append(html);
+                    $('#tableOrders').removeAttr('hidden')
+                },
+                error: function (ex) {
+                    var r = $.parseJSON(response.responseText);
+                    alert("Message: " + r.Message);
+                }
+            });
+        }
+    </script>
 </head>
 
 <body>
     <header>
         <h1>
-            Service Manager API
+            Service Manager API - Customers
         </h1>
     </header>
 
@@ -58,6 +96,24 @@
                 <input type="submit" value="Submit" />
             </div>
         </form>
+
+        <div>
+            <h2>List Orders</h2>
+            <label for="customer">Customer's ID: </label>
+            <input type="text" id="customerId" name="customer" />
+
+            <table id="tableOrders" hidden>
+                <tr>
+                    <th>
+                        Order Name:
+                    </th>
+                    <th>
+                        Description:
+                    </th>
+                </tr>
+            </table>
+            <input type="button" value="Search" onclick="getServicesFromDB();" />
+        </div>
     </main>
 
     <footer>
