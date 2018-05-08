@@ -26,16 +26,20 @@ function getDataFromDB() {
             var html = '';
             for (var i = 0; i < json.length; i++) {
                 html += '<tr class="orderRow">';
+                var name = '';
+                var description = '';
                 $.each(json[i], function (key, value) {
-                    var name = '';
-                    var description = '';
                     if (key === 'OrderName' || key === 'CustomerName') {
                         name = value;
                     } else if (key === 'Description') {
                         description = value;
                     }
-                    html += '<td>' + name + '</td>'
-                    html += '<td>' + description + '</td>'
+                    if (name !== '' && description !== '') {
+                        html += '<td>' + name + '</td>'
+                        html += '<td>' + description + '</td>'
+                        name = '';
+                        description = '';
+                    }
                 });
                 html += '</tr>';
             }

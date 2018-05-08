@@ -4,7 +4,6 @@ C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerA
 C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Web\bin\roslyn\System.IO.Compression.dll
 C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Web\bin\roslyn\VBCSCompiler.exe
-C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Web\bin\EntityFramework.dll
 C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Web\bin\ServiceManagerAPI.Web.dll.config
 C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Web\bin\ServiceManagerAPI.Web.dll
 C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Web\bin\ServiceManagerAPI.Web.pdb
@@ -50,6 +49,7 @@ C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerA
 C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Web\bin\roslyn\vbc.exe.config
 C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Web\bin\roslyn\vbc.rsp
 C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Web\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Web\bin\EntityFramework.dll
 C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Web\bin\EntityFramework.SqlServer.dll
 C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\Alexander7337\Documents\GitHub\ServiceManagerAPI\WebAPI\ServiceManagerAPI.Web\bin\Newtonsoft.Json.dll

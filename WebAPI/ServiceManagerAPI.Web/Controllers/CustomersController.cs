@@ -15,6 +15,7 @@
         private ApiContext _context = new ApiContext();
 
         // GET api/customers
+        [Route("api/customers")]
         public IEnumerable<Customer> Get()
         {
             IEnumerable<Customer> customers = this._context.Customers.ToList();

@@ -112,6 +112,12 @@ function getItemID(item) {
 function formatItem(item) {
     if (item.ServiceName !== undefined) {
         return item.ServiceName + ': ' + item.Description;
+    } else if (item.OrderName !== undefined) {
+        return item.OrderName + ': ' + item.Description;
+    } else if (item.CustomerName !== undefined) {
+        return item.CustomerName;
+    } else if (item.EmployeeName !== undefined) {
+        return item.EmployeeName;
     }
-    return item.OrderName + ': ' + item.Description;
+    return "Item's property was not found";
 }
