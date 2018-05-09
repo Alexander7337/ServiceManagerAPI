@@ -15,7 +15,7 @@
         private ApiContext _context = new ApiContext();
 
         // GET api/customers
-        [Route("api/customers")]
+        //[Route("api/customers")]
         public IEnumerable<Customer> Get()
         {
             IEnumerable<Customer> customers = this._context.Customers.ToList();
@@ -23,7 +23,7 @@
         }
 
         // GET api/customers/5
-        [ActionName("GetCustomer")]
+        //[ActionName("GetCustomer")]
         public IHttpActionResult GetCustomer(int id)
         {
             Customer customer = new Customer();
@@ -89,6 +89,7 @@
 
         [HttpGet]
         // GET: api/customers/5/GetCustomerOrders
+        [Route("api/customers/{customerId?}/GetCustomerOrders")]
         public IEnumerable<IEntity> GetCustomerOrders()
         {
             int customerId = 0;

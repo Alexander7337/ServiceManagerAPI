@@ -11,3 +11,4 @@ $(document).ready(function () {
     uri = loadUri('orders');
     loadServices(uri)
 });
+

@@ -1,10 +1,5 @@
 ﻿var uri = "";
 
-//$(document).ready(function () {
-//    uri = loadUri('services');
-//    loadServices(uri)
-//});
-
 function loadServices(input) {
     //var uri = loadUri(input);
 
@@ -51,24 +46,46 @@ function updateItem() {
     var service = new Object();
     service.ServiceName = serviceName;
     service.Description = description;
+    var order = new Object();
+    order.OrderName = serviceName;
+    order.Description = description;
     var json = JSON.stringify(service);
 
     //var uri = loadUri('services')
-    $.ajax({
-        url: uri + '/' + id,
-        type: 'PUT',
-        dataType: 'json',
-        data: { serviceName: serviceName, description: description },
-        success: function (data, textStatus, jqxhr) {
-            console.log(data);
-            setTimeout(function () {
-                location.reload();
-            }, 1000);
-        },
-        error: function (jqxhr, textStatus, error) {
-            console.log(error);
-        }
-    })
+    if (uri.includes('orders')) {
+        $.ajax({
+            url: uri + '/' + id,
+            type: 'PUT',
+            dataType: 'json',
+            data: { orderName: serviceName, description: description },
+            success: function (data, textStatus, jqxhr) {
+                console.log(data);
+                setTimeout(function () {
+                    location.reload();
+                }, 1000);
+            },
+            error: function (jqxhr, textStatus, error) {
+                console.log(error);
+            }
+        })
+    } else if (uri.includes('services')) {
+        $.ajax({
+            url: uri + '/' + id,
+            type: 'PUT',
+            dataType: 'json',
+            data: { serviceName: serviceName, description: description },
+            success: function (data, textStatus, jqxhr) {
+                console.log(data);
+                setTimeout(function () {
+                    location.reload();
+                }, 1000);
+            },
+            error: function (jqxhr, textStatus, error) {
+                console.log(error);
+            }
+        })
+    }
+    
 }
 
 function findServiceByID() {
@@ -77,7 +94,16 @@ function findServiceByID() {
     $.getJSON(uri + '/' + id)
         .done(function (data) {
             $('#service').text(formatItem(data));
-            $('#serviceName').val(data.ServiceName);
+            if (data.ServiceName !== undefined) {
+                $('#serviceName').val(data.ServiceName);
+            } else if (data.OrderName !== undefined) {
+                $('#serviceName').val(data.OrderName);
+            } else if (data.CustomerName !== undefined) {
+                $('#serviceName').val(data.CustomerName);
+            } else if (data.EmployeeName !== undefined) {
+                $('#serviceName').val(data.EmployeeName);
+            }
+            
             $('#description').val(data.Description);
         })
         .fail(function (jqxhr, textStatus, errorThrown) {
